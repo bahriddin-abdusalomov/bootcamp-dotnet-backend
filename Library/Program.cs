@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var libraryManagement = new LibraryManagementCore(DataSource.Books, DataSource.Users);
+
+            libraryManagement.DisplayAllUsers();
+            libraryManagement.DisplayAllBooks();
         }
     }
 }
