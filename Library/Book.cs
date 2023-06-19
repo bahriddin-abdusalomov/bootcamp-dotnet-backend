@@ -14,25 +14,28 @@ namespace Library
 
         public string Description { get; set; }
 
-        public string Autor { get; set; }
+        public string Author { get; set; }
 
         public string Category { get; set; }
 
         public Guid? ReaderId { get; set; }
 
-        public Book(string name, string autor)
+        public Book(string name, string author, string description, string category)
         {
             Id = Guid.NewGuid();
             Name = name;
-            Autor = autor;
+            Author = author;
+            Description = description;
+            Category = category;
         }
 
         public override string ToString()
         {
-            return $"\nID: {Id}" +
-                     $"\nKitobning nomi: {Name}," +
-                     $"\nMuallifi: {Autor}" +
-                     $"\nKim o'qiyapti: {ReaderId}";
+            return $"Kitob" +
+                $"\n id : {Id}, " +
+                $"\n nomi : {Name}, " +
+                $"\n muallifi : {Author}" +
+                $"\n kim o'qiyapti : {ReaderId}\n";
         }
     }
 }
