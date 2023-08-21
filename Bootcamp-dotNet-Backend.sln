@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{65091226-AB16-444C-8732-D0F2BD8B9155}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "Library\Library.csproj", "{65091226-AB16-444C-8732-D0F2BD8B9155}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegate", "Delegate\Delegate.csproj", "{D601CD2C-36C0-4820-9D22-577704256072}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlgorithmC#", "AlgorithmC#\AlgorithmC#.csproj", "{7FE56F06-0968-4605-BE30-CF2145486E50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections", "Collections\Collections.csproj", "{790DFE24-618D-4D92-88BE-91A52924208F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskScheduler", "TaskScheduler\TaskScheduler.csproj", "{3FB867E9-F0CA-4823-A276-B8655DDA02AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiApp1", "MauiApp1\MauiApp1.csproj", "{217131DF-2584-4291-98A6-E5AB45787957}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,28 @@ Global
 		{65091226-AB16-444C-8732-D0F2BD8B9155}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65091226-AB16-444C-8732-D0F2BD8B9155}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65091226-AB16-444C-8732-D0F2BD8B9155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D601CD2C-36C0-4820-9D22-577704256072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D601CD2C-36C0-4820-9D22-577704256072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D601CD2C-36C0-4820-9D22-577704256072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D601CD2C-36C0-4820-9D22-577704256072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE56F06-0968-4605-BE30-CF2145486E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE56F06-0968-4605-BE30-CF2145486E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE56F06-0968-4605-BE30-CF2145486E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE56F06-0968-4605-BE30-CF2145486E50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{790DFE24-618D-4D92-88BE-91A52924208F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{790DFE24-618D-4D92-88BE-91A52924208F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{790DFE24-618D-4D92-88BE-91A52924208F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{790DFE24-618D-4D92-88BE-91A52924208F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FB867E9-F0CA-4823-A276-B8655DDA02AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FB867E9-F0CA-4823-A276-B8655DDA02AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FB867E9-F0CA-4823-A276-B8655DDA02AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FB867E9-F0CA-4823-A276-B8655DDA02AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{217131DF-2584-4291-98A6-E5AB45787957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{217131DF-2584-4291-98A6-E5AB45787957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{217131DF-2584-4291-98A6-E5AB45787957}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{217131DF-2584-4291-98A6-E5AB45787957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{217131DF-2584-4291-98A6-E5AB45787957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{217131DF-2584-4291-98A6-E5AB45787957}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

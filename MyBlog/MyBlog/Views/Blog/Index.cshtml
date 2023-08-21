@@ -1,0 +1,26 @@
+﻿@using MyBlog.Models;
+
+@model List<Post>
+@{
+    Layout = "_Layout";
+}
+@{
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>Title</td>
+            <td>Body</td>
+            <td>CreatedTime</td>
+            </tr>
+
+        @foreach(var item in Model)
+        {
+            <tr>
+                <th>@item.Id</th>
+                <th>@item.Title</th>
+                <th>@item.Body</th>
+                <th>@item.CreatedTime</th>
+            </tr>
+        }
+    </table>
+}

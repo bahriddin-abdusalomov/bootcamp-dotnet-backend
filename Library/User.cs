@@ -14,7 +14,7 @@ namespace Library
 
         public string LastName { get; set; }
 
-        public string UserName { get; set; }
+        public string Email { get; set; }
 
         public User(string firstName, string lastName)
         {
@@ -27,7 +27,7 @@ namespace Library
         public User(string firstName, string lastName, string userName) : this(firstName, lastName)
         {
 
-            UserName = userName;
+            Email = userName;
         }
 
         public override string ToString()
@@ -36,7 +36,7 @@ namespace Library
                     $"\nId: {Id}" +
                     $"\nFirstName: {FirstName}" +
                     $"\nLastName: {LastName}" +
-                    $"\nUserName: {UserName}";
+                    $"\nUserName: {Email}";
         }
     }
 }
