@@ -13,14 +13,14 @@
             taskList.Add(new TaskUnit("HomeTask4", "NImadurlar", DateTime.Now));
             taskList.Add(new TaskUnit("HomeTask5", "NImadurlar", DateTime.Now));
 
-            taskList.LatestTasks(taskList);
+            //taskList.LatestTasks(taskList);
 
-            for (int i = 0; i < 5; i++)
-            {
-                Console.WriteLine($"\nName: {taskList[i].Name}" +
-                    $"\nDesciription: {taskList[i].Desciription}" +
-                    $"\nDuaDate: {taskList[i].DuaDate}");
-            }
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.WriteLine($"\nName: {taskList[i].Name}" +
+            //        $"\nDesciription: {taskList[i].Desciription}" +
+            //        $"\nDuaDate: {taskList[i].DuaDate}");
+            //}
         }
     }
 }
