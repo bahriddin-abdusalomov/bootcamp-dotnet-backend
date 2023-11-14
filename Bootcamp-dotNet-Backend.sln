@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections", "Collections\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskScheduler", "TaskScheduler\TaskScheduler.csproj", "{3FB867E9-F0CA-4823-A276-B8655DDA02AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiApp1", "MauiApp1\MauiApp1.csproj", "{217131DF-2584-4291-98A6-E5AB45787957}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiApp1", "MauiApp1\MauiApp1.csproj", "{217131DF-2584-4291-98A6-E5AB45787957}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWT.Auth", "JWT.Auth\JWT.Auth.csproj", "{32D69931-8B2C-48CA-BD6C-B687007A198E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{217131DF-2584-4291-98A6-E5AB45787957}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{217131DF-2584-4291-98A6-E5AB45787957}.Release|Any CPU.Build.0 = Release|Any CPU
 		{217131DF-2584-4291-98A6-E5AB45787957}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{32D69931-8B2C-48CA-BD6C-B687007A198E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D69931-8B2C-48CA-BD6C-B687007A198E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D69931-8B2C-48CA-BD6C-B687007A198E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D69931-8B2C-48CA-BD6C-B687007A198E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
