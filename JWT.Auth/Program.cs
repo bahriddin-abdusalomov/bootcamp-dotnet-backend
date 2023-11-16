@@ -61,13 +61,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     {
         opttins.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
         {
-            // kimga chiqarilgan
             ValidateIssuer = true,
-            // kim tomonidan berilgan
             ValidateAudience = true,
-            // vaqti
             ValidateLifetime = true,
-            // secret keyi
             ValidateIssuerSigningKey = true,
             ValidAudience = builder.Configuration["JWT:ValidAudience"],
             ValidIssuer = builder.Configuration["JWT:ValidIssuer"],

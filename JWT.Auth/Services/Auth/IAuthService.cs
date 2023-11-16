@@ -4,6 +4,6 @@ namespace JWT.Auth.Services.Auth
 {
     public interface IAuthService
     {
-        ValueTask<string> Login(UserDto request);
+        ValueTask<string> Login(UserDto request, string role);
     }
 }

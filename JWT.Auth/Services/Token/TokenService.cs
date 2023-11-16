@@ -1,4 +1,5 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using JWT.Auth.Enums;
+using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -14,21 +15,16 @@ namespace JWT.Auth.Services.Token
             _configuration = configuration;
         }
 
-        public string Generate(string username)
+        public string Generate(string username, string role)
         {
-            // bu malumotlar
             var claims = new Claim[]
             {
-                // name 
                 new Claim(JwtRegisteredClaimNames.Name, username),
-                // identificatori
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                // vaqti
                 new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
-
+                new Claim(ClaimTypes.Role, role)
             };
 
-            // qandedur algoritm boyicha shifrlanadi
             var credentials = new SigningCredentials(
                 new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Secret"])),
                 SecurityAlgorithms.HmacSha256
@@ -36,7 +32,7 @@ namespace JWT.Auth.Services.Token
 
             var token = new JwtSecurityToken(
                 _configuration["JWT:ValidIssuer"],
-                _configuration["JWT:ValidAu dience"],
+                _configuration["JWT:ValidAudience"],
                 claims,
                 expires: DateTime.UtcNow.AddDays(1),
                 signingCredentials: credentials

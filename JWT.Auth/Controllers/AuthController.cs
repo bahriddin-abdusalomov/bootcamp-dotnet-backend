@@ -1,4 +1,5 @@
 ﻿using JWT.Auth.Dtos;
+using JWT.Auth.Enums;
 using JWT.Auth.Services.Auth;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -16,7 +17,6 @@ namespace JWT.Auth.Controllers
         {
             _authService = authService;
             _logger = logger;
-
         }
 
         [HttpPost]
@@ -24,13 +24,12 @@ namespace JWT.Auth.Controllers
         {
             try
             {
-                var token = await _authService.Login(request);
-
+                var token = await _authService.Login(request, Role.Admin.ToString());
                 return Ok(token);
-            }
+            }                                                                                                                                                                           
             catch (Exception ex)
             {
-                _logger.LogError(ex.Message, ex.StackTrace);
+                _logger.LogError(ex.Message);
                 return BadRequest("Username or Password is not valid");
             }
         }
