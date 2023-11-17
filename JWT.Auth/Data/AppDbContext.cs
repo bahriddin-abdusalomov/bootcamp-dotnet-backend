@@ -12,7 +12,7 @@ public class AppDbContext : DbContext
 
     public DbSet<User> Users { get; set; }
     public DbSet<PassportData> PassportData { get; set; }
-    public DbSet<Car> Cars { get; set; }
+    public DbSet<Car> Cars { get; set; }    
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
