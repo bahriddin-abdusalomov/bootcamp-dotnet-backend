@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JWT.Codepedia", "JWT.Codepe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9FA5CCC2-5C98-4224-A297-F378DC5F72EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway.API", "src\Gateway.API\Gateway.API.csproj", "{90AC12C1-990F-4EC0-A15B-3536FD04E9A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway.API", "src\Gateway.API\Gateway.API.csproj", "{90AC12C1-990F-4EC0-A15B-3536FD04E9A0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Education", "Education", "{1384FC40-1AC9-49F0-ABB9-6FDBE6F10803}"
 EndProject
@@ -31,13 +31,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Taxes", "Taxes", "{7B608CB6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HealthCare", "HealthCare", "{B4ECB358-2212-474F-A4BB-72F0D84F2CD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Education.API", "src\Education\Education.API\Education.API.csproj", "{EA92F94E-F0ED-4295-ABF9-D9D94F20C7C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Education.API", "src\Education\Education.API\Education.API.csproj", "{EA92F94E-F0ED-4295-ABF9-D9D94F20C7C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCare.API", "src\HealthCare\HealthCare.API\HealthCare.API.csproj", "{FD78CD1C-3066-4201-83B0-E82E0A8E3F3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCare.API", "src\HealthCare\HealthCare.API\HealthCare.API.csproj", "{FD78CD1C-3066-4201-83B0-E82E0A8E3F3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxes.API", "src\Taxes\Taxes.API\Taxes.API.csproj", "{F62CEE47-D265-4A73-8F5A-140E4DF40997}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taxes.API", "src\Taxes\Taxes.API\Taxes.API.csproj", "{F62CEE47-D265-4A73-8F5A-140E4DF40997}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transport.API", "src\Transport\Transport.API\Transport.API.csproj", "{EDC8C64C-4F40-4C9A-848E-47F0101E5FB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Transport.API", "src\Transport\Transport.API\Transport.API.csproj", "{EDC8C64C-4F40-4C9A-848E-47F0101E5FB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisCache", "RedisCache\RedisCache.csproj", "{88EE2867-6B2E-47BD-A368-2E7755FDC235}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{EDC8C64C-4F40-4C9A-848E-47F0101E5FB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDC8C64C-4F40-4C9A-848E-47F0101E5FB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDC8C64C-4F40-4C9A-848E-47F0101E5FB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88EE2867-6B2E-47BD-A368-2E7755FDC235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88EE2867-6B2E-47BD-A368-2E7755FDC235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88EE2867-6B2E-47BD-A368-2E7755FDC235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88EE2867-6B2E-47BD-A368-2E7755FDC235}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
